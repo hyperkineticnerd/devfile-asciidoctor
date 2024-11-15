@@ -1,5 +1,4 @@
-FROM registry.redhat.io/devspaces/udi-rhel8:latest 
-# @sha256:4a015e3c3f4299c0a9e1b9333ab06464709c71f165a6165e1d8bfabcbd91f925
+FROM registry.redhat.io/devspaces/udi-rhel8:3.16 
 
 LABEL MAINTAINERS="Sean Nelson"
 
