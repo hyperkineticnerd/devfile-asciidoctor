@@ -5,11 +5,21 @@ metadata:
   attributes:
     alpha.build-context: container
     alpha.build-dockerfile: Containerfile
+
+attributes:
+  .vscode/extensions.json: |
+    {
+      "recommendations": [
+        "anwar.papyrus-pdf"
+      ]
+    }
+
 components:
   - name: udi8-asciidoctor
     container:
       image: quay.io/hyperkineticnerd/udi8-asciidoctor:latest
       mountSources: true
+
 commands:
   - id: build-pdf
     exec:
